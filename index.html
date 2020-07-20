@@ -115,34 +115,77 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2020/07/20/hello-world/"
-    >Hello World</a> 
+  <a class="article-title" href="/2020/05/12/hello-world/"
+    >hello-world</a> 
 </h2>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/07/20/hello-world/" class="article-date">
-  <time datetime="2020-07-20T08:54:18.712Z" itemprop="datePublished">2020-07-20</time>
+      <a href="/2020/05/12/hello-world/" class="article-date">
+  <time datetime="2020-05-12T05:43:29.031Z" itemprop="datePublished">2020-05-12</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+  <p><img src="./docs/img/214x70.png" alt="logo"></p>
+<h1 id="Easemob-IM-App-Server"><a href="#Easemob-IM-App-Server" class="headerlink" title="Easemob IM App Server"></a>Easemob IM App Server</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>该服务为 环信直播间Demo 提供后端服务，可作为 App 使用环信SDK实现直播间的服务器端实现示例。</p>
+<ul>
+<li>该服务目前提供的功能有</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1、创建直播间；</span><br><span class="line">2、修改直播间详情；</span><br><span class="line">3、获取直播间详情；</span><br><span class="line">4、获取直播间列表；</span><br><span class="line">5、获取正在直播的直播间列表；</span><br><span class="line">6、开启直播；</span><br><span class="line">7、结束直播；</span><br><span class="line">8、转让直播间；</span><br><span class="line">9、删除直播间；</span><br><span class="line">10、获取推拉流地址。</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="技术选择"><a href="#技术选择" class="headerlink" title="技术选择"></a>技术选择</h2><ul>
+<li><a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">Spring Boot</a></li>
+<li><a href="https://spring.io/projects/spring-data-jpa" target="_blank" rel="noopener">Spring Data JPA</a></li>
+<li><a href="https://projectlombok.org/" target="_blank" rel="noopener">lombok</a></li>
+</ul>
+<h2 id="主要组件"><a href="#主要组件" class="headerlink" title="主要组件"></a>主要组件</h2><ul>
+<li>MySQL</li>
+</ul>
+<h2 id="数据库使用说明"><a href="#数据库使用说明" class="headerlink" title="数据库使用说明"></a>数据库使用说明</h2><ul>
+<li>使用MySQL存储直播间信息</li>
+<li>建表SQL见 <a href="./docs/create_tables.sql">建表SQL</a></li>
+</ul>
+<h2 id="直播间API文档"><a href="#直播间API文档" class="headerlink" title="直播间API文档"></a>直播间API文档</h2><p><a href="./docs/直播间API文档.md">直播间Demo服务端API文档</a></p>
+<h2 id="环信直播间文档"><a href="#环信直播间文档" class="headerlink" title="环信直播间文档"></a>环信直播间文档</h2><p><a href="http://docs-im.easemob.com/im/other/integrationcases/live-chatroom" target="_blank" rel="noopener">环信直播间集成文档</a></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li><p>若初次使用环信，需前往 <a href="https://console.easemob.com/user/register" target="_blank" rel="noopener">环信IM开发者注册页</a> 注册成为环信IM开发者；</p>
+</li>
+<li><p>注册成为环信IM开发者后，登录<a href="https://console.easemob.com/user/login" target="_blank" rel="noopener">环信IM管理后台</a> 创建一个应用(App)，之后在App详情页可获得AppKey以及AppKey的clientId和clientSecret；</p>
+<ul>
+<li>管理后台的使用可参考文档：<a href="http://docs-im.easemob.com/im/quickstart/essential/console" target="_blank" rel="noopener">环信管理后台使用指南</a></li>
+</ul>
+</li>
+<li><p>成为环信IM开发者并成功注册App后，可在自己的服务器部署服务</p>
+<ul>
+<li><p>服务配置文件参考：<a href="./easemob-im-live-server/src/main/resources/application.properties">application.properties</a></p>
+</li>
+<li><p>AppKey组成规则：${orgName}#${appName}，拿到AppKey后可得到对应的orgName和appName；</p>
+</li>
+<li><p>使用自己的orgName和appName以及AppKey的clientId和clientSecret修改配置文件，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">easemob.live.rest.appkey.orgName&#x3D;easemob-demo</span><br><span class="line">easemob.live.rest.appkey.appName&#x3D;chatdemoui</span><br><span class="line">easemob.live.rest.appkey.clientId&#x3D;xxxx</span><br><span class="line">easemob.live.rest.appkey.clientSecret&#x3D;xxxx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装MySQL，并根据<a href="./docs/create_tables.sql">建表SQL</a>创建数据库及表，设置服务配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">spring.datasource.url&#x3D;jdbc:mysql:&#x2F;&#x2F;127.0.0.1:3306&#x2F;app_server?useSSL&#x3D;false&amp;useUnicode&#x3D;true&amp;characterEncoding&#x3D;utf8</span><br><span class="line">spring.datasource.username&#x3D;root</span><br><span class="line">spring.datasource.password&#x3D;123456</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动服务即可</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="模块说明"><a href="#模块说明" class="headerlink" title="模块说明"></a>模块说明</h2><h4 id="liveroom模块"><a href="#liveroom模块" class="headerlink" title="liveroom模块"></a><a href="./easemob-im-live-server/src/main/java/com/easemob/live/server/liveroom">liveroom模块</a></h4><ul>
+<li>提供直播间Rest Api服务，包含controller、model、service、exception等。</li>
+</ul>
+<h4 id="rest模块"><a href="#rest模块" class="headerlink" title="rest模块"></a><a href="./easemob-im-live-server/src/main/java/com/easemob/live/server/rest">rest模块</a></h4><ul>
+<li>直播间服务需调用环信REST接口，该模块提供调用环信REST服务，包含token、user、chatroom API的调用，封装了调用所需的RequestBody、ResponseBody。</li>
+</ul>
+<h4 id="qiniu-service"><a href="#qiniu-service" class="headerlink" title="qiniu-service"></a><a href="./qiniu-service">qiniu-service</a></h4><ul>
+<li>获取七牛云直播推拉流地址。</li>
+</ul>
+<h2 id="环信文档"><a href="#环信文档" class="headerlink" title="环信文档"></a>环信文档</h2><p><a href="http://docs-im.easemob.com/im/server/ready/intro" target="_blank" rel="noopener">服务端REST文档</a></p>
  
       <!-- reward -->
       
